@@ -21,5 +21,20 @@ namespace Expenses.WebApi.Controllers
                 new{ name = "dhjhjdd"},
             });
         }
+
+        [HttpGet("Data")]
+        public IActionResult GetData()
+        {
+            return Ok(
+                new[]
+                {
+                    new { data = "data"},
+                    new { data = "da21dfsdfta"},
+                    new { data = "ds12dfata"},
+                    new { data = "ds1dfata"},
+                    new { data = "ds1212aasdata"},
+                    new { data = "d121212ata"},
+                });
+        }
     }
 }
