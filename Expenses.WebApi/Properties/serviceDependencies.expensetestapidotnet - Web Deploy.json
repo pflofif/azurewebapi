@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/expensesdbservertest/databases/Expenses.WebApi_db",
+      "type": "mssql.azure",
+      "connectionId": "DB_CONNECTION_STRING"
+    },
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DB_CONNECTION_STRING"
+    }
+  }
+}
